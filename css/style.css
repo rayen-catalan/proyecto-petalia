@@ -6,11 +6,159 @@ selector{
 
 */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #e9e9e6;
+}
 h1 {
     color: indigo;
 }
 
 h2{
     color:darkorchid
-    
+
+}
+
+header nav {
+    width: 50%;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+
+}
+
+.main-index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.main-index h1 {
+    padding: 20px;
+}
+
+
+.main-index section {
+    display: grid;
+    grid-template-areas: "titulo titulo titulo"
+        "promo promo promo"
+        "bloque1 bloque2 bloque3"
+        "bloque4 bloque5 bloque6";
+    gap: 20px;
+}
+
+.main-index section h2 {
+    padding: 10px;
+    grid-area: titulo;
+}
+
+.main-index section p {
+    padding: 10px;
+    grid-area: promo;
+}
+
+.primavera {
+    grid-area: bloque1;
+}
+
+.verano {
+    grid-area: bloque2;
+}
+
+.otoño {
+    grid-area: bloque3;
+}
+
+.main-index section div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(255, 255, 0, 0.2),
+        0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main-index section div h3 {
+    padding: 10px;
+}
+
+.main-index section div img {
+    width: 80%;
+    padding: 10px;
+}
+
+.main-index section div button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    color: #333;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1),
+        0 2px 3px rgba(255, 255, 0, 0.2);
+}
+
+footer{
+    padding: 20px;
+    display: grid;
+    grid-template-areas: "derechos derechos" 
+                        "iframe-a iframe-b"
+                        "iframe-c iframe-c";
+                        gap: 20px;
+}
+
+footer p{
+    grid-area: derechos;
+    justify-self: center;
+
+}
+ 
+footer .iframe-a{
+    grid-area: iframe-a;
+    justify-self: center;
+
+}
+
+footer .iframe-b{
+    grid-area: iframe-b;
+    justify-self: center;
+
+}
+
+footer .iframe-c{
+    grid-area: iframe-c;
+    justify-self: center;
+
+}
+
+footer iframe{
+    width: 60%;
 }
