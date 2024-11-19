@@ -1,0 +1,50 @@
+:root {
+  --color-principal: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+}
+header h1 {
+  color: azure;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  font-size: 2rem;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav li {
+  text-decoration: underline;
+  padding: 1rem;
+}
+
+.link {
+  color: aliceblue;
+  background-color: lightcoral;
+}
+.link:hover {
+  color: antiquewhite;
+  background-color: bisque;
+}
+
+.link:hover {
+  color: antiquewhite;
+  background-color: bisque;
+}
+
+.link-active {
+  color: beige;
+}
+
+.galeria {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=style.css..map */

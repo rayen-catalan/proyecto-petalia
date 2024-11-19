@@ -20,8 +20,13 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #e9e9e6;
+    background-color: #fafaf9;
 }
+
+img {
+   width: 20%;
+}
+
 h1 {
     color: indigo;
 }
