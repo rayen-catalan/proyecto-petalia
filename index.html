@@ -7,77 +7,230 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
-    <title>Petalía</title>
+    <title>Petalía</title>    
 
-      <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Petalía</title>
-        <link rel="stylesheet" href="./css/style.css">
-        <link rel="shortcut icon" href="img/logo petalia-01.png" type="logo">
-    </head>
-
-    <body>
-      <header>
-        <img src="./img/logo petalia-01.png" alt="Petalía">
-        <nav>
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./pages/sobrenosotros.html">Sobre Nosotros</a></li>
-                <li><a href="./pages">Arreglo de temporada</a></li>
-                <li><a href="./pages/ubicación.html">Ubicación</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
+<body>
+  
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./img/logo petalia-01.png" alt="logo" width="200px">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Somos</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Catálogo de arreglos</a></li>
+              <li><a class="dropdown-item" href="#">Ubicación</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
-        </nav>
-    </header>
-    </body>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Contacto</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="buscar" placeholder="buscar" aria-label="buscar">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="header-content container">
 
-          <main class="main-index">
-            <h1>Arreglos Florales Exclusivos para cada temporada</h1>
-    </main>
-            <section class="=portada container">
+    <h1>Arreglos Florales Exclusivos para cada temporada</h1>
+    <p>La naturaleza se viste de colores en cada estación. 
+      Descubre nuestros arreglos florales únicos y personalizad
+    </p>
+    <a href="#" class="btn-1"></a>
+  </div>
+</head>
 
-                <div class="text-left">
-                    <P>La naturaleza se viste de colores en cada estación. 
-                      Descubre nuestros arreglos florales únicos y personalizados.</P>
+<section class="flores">
+  
+  <img class="flores-img" src="img/flores_-01.jpg" alt="">
 
-                    <a class="btn btn-light">Ver Catálogo de Arreglos</a>
-                </div>
-<div class="slider-container">
-    <di class="slider row caja-bloque">
-      <img src="./img/flores_-01.jpg" class="rounded float-end" alt="...">
-    </di>
-            </div>
-          </main>
+  <div class="flores-content container">
 
-          <section>
-            <h2>Arreglos por Temporada</h2>
-            <p>"Cada temporada tiene sus colores y estilos únicos. Descubre cuál es el arreglo ideal para ti."</p>
+    <h2>Arreglos por Temporada</h2>
+    <p class ="txt-p">
+      "Cada temporada tiene sus colores y estilos únicos. 
+      Descubre cuál es el arreglo ideal para ti."
+    </p>
 
-            <div class="ropa-a">
-                <h3>Primavera</h3>
-                <img src="./img/flores_-01.jpg" alt="Primavera" width="350px" height="250px">
-                <button>Ver más</button>
-                <p>Arreglos coloridos con tulipanes, narcisos y rosas</p>
-            </div>
+    <div class="primavera-group">
+      <div class="flores-1">
+        <img src="img/tulipan.jpg" alt="">
+        <h3>Primavera</h3>
+        <p>Arreglos coloridos con tulipanes, narcisos y rosas</p>
+        <button>Ver más</button>
+      </div>
+    </div>
+    <div class="otoño-group">
+      <div class="flores-3">
+        <img src="img/arreglos de bodajpg.jpg" alt="">
+        <h4>Otoño</h4>
+        <p>Arreglos cálidos con crisantemos, gerberas y hojas otoñales.</p>
+        <button>Ver más</button>
+      </div>
+    </div>
+    <div class="verano-group">
+      <div class="flores-4">
+        <img src="img/trabajando.jpg" alt="">
+        <h5>Verano</h5>
+        <p>Diseños frescos con girasoles, dalias y lavanda</p>
+        <button>Ver más</button>
+      </div>
+    </div>
+    <a href="#" class="btn-1">Información</a>
+   </div>
 
-            <div class="Verano">
-                <h3>Verano</h3>
-                <img src="./img/flores_blancas.jpg" alt="Verano">
-                <button>Ver más</button>
-                <p>Diseños frescos con girasoles, dalias y lavanda</p>
-            </div>
+</section>
 
-            <div class="Otoño">
-                <h3>Otoño</h3>
-                <img src="./img/flores_pincipal-01.jpg" alt="Otoño">
-                <button>Ver más</button>
-                <p>Arreglos cálidos con crisantemos, gerberas y hojas otoñales.</p>
-            </div>
-          </section>
-          <footer>
+<main class="productos">
+
+<div class="productos-content container">
+      <h2>Colores y significados</h2>
+
+      <div class="colores-group"> 
+        <img src="img/flores_blancas.jpg" alt="">
+        <h3>Producto 1</h3>
+      </div>
+      <div class="colores-group"> 
+        <img src="img/flores_blancas.jpg" alt="">
+        <h3>Producto 2</h3>
+      </div>
+      <div class="colores-group"> 
+        <img src="img/flores_blancas.jpg" alt="">
+        <h3>Producto 3</h3>
+      </div>
+</div>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+  Odit nobis veniam omnis itaque corrupti esse neque, nulla aliquid numquam dolores, 
+  quisquam maxime saepe nam quibusdam, facere incidunt quae quo sed
+</p>
+<a href="#" class="btn-1">Información</a>
+</main>
+
+
+<section class="general1">
+
+  <div class="general-1">
+    <h2>Lorem ipsum</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <a href="#" class="btn-1">Información</a>
+    <div class="general-2"></div>
+  </div>
+
+</section>
+
+<section class="general1">
+
+  <div class="general-3"></div>
+
+  <div class="general-1">
+    <h2>Lorem ipsum</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <a href="#" class="btn-1">Información</a>
+  
+  </div>
+
+</section>
+<section class="blog container">
+
+  <h2>Blog</h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+  <div class="blog-content">
+    <div class="blog-1">
+      <img src="img/tienda-01.jpg" alt="">
+      <h3>Blog 1</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Illum enim aut asperiores obcaecati repellendus facilis eveniet nihil? 
+        Vel voluptates reiciendis nisi natus. Beatae earum consectetur sapiente. Voluptatem perspiciatis labore dolor
+      </p>
+    </div>
+  <div class="blog-1">
+    <img src="img/mariaisabel.jpg" alt="">
+    <h3>Blog 2</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Illum enim aut asperiores obcaecati repellendus facilis eveniet nihil? 
+      Vel voluptates reiciendis nisi natus. Beatae earum consectetur sapiente. Voluptatem perspiciatis labore dolor
+    </p>
+  </div>
+  <div class="blog-3">
+    <img src="img/trabajando.jpg" alt="">
+    <h3>Blog 1</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Illum enim aut asperiores obcaecati repellendus facilis eveniet nihil? 
+      Vel voluptates reiciendis nisi natus. Beatae earum consectetur sapiente. Voluptatem perspiciatis labore dolor
+    </p>
+  </div>
+</div>
+
+<a href="#" class="btn-1">Información</a>
+</section>
+
+
+<footer class="footer">
+
+  <div class="link">
+
+    <h3>Lorem</h3>
+    <ul>
+      <li><a href="#">Lorem</a></li>
+      <li><a href="#">Lorem</a></li>
+      <li><a href="#">Lorem</a></li>
+      <li><a href="#">Lorem</a></li>
+    </ul>
+  </div>
+  <div class="link">
+    <h3>Lorem</h3>
+    <ul>
+      <li><a href="#">Lorem</a></li>
+      <li><a href="#">Lorem</a></li>
+      <li><a href="#">Lorem</a></li>
+      <li><a href="#">Lorem</a></li>
+    </ul>
+  </div>
+  <div class="link">
+    <h3>Lorem</h3>
+    <ul>
+      <li><a href="#">Lorem</a></li>
+      <li><a href="#">Lorem</a></li>
+      <li><a href="#">Lorem</a></li>
+      <li><a href="#">Lorem</a></li>
+    </ul>
+  </div>
+  <div class="link">
+    <h3>Lorem</h3>
+    <ul>
+      <li><a href="#">Lorem</a></li>
+      <li><a href="#">Lorem</a></li>
+      <li><a href="#">Lorem</a></li>
+      <li><a href="#">Lorem</a></li>
+    </ul>
+  </div>
+
             <p>Derechos reservados Petalía</p>
-          </footer>
+</footer>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
